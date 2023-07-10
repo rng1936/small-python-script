@@ -1,0 +1,47 @@
+//WEB ABANDONS
+if Text.Contains([#"Podium Orchestration Name"], "Web") and Text.Contains([#"Podium Orchestration Name"], "Abandon")
+then "Web Abandons"
+else if Text.Contains([#"Podium Orchestration Name"], "Web") and Text.Contains([#"Podium Orchestration Name"], "abandon")
+then "Web Abandons"
+else if Text.Contains([#"Podium Orchestration Name"], "web") and Text.Contains([#"Podium Orchestration Name"], "abandon")
+then "Web Abandons"
+else if Text.Contains([#"Message Name"], "web") and Text.Contains([#"Podium Orchestration Name"], "abandon")
+then "Web Abandons"
+else if Text.Contains([#"Message Name"], "Web") and Text.Contains([#"Podium Orchestration Name"], "abandon")
+then "Web Abandons"
+
+//PROMOTIONAL
+else if Text.Contains([#"Message Name"], "Marketing")
+then "Promotion"
+else if Text.Contains([#"Message Name"], "PROMO")
+then "Promotion"
+else if Text.Contains([#"Message Name"], "Promo")
+then "Promotion"
+
+//STORE ABANDONS
+else if Text.Contains([#"Podium Orchestration Name"], "Store") and Text.Contains([#"Podium Orchestration Name"], "Abandon")
+then "Store Abandons"
+else if Text.Contains([#"Podium Orchestration Name"], "store") and Text.Contains([#"Podium Orchestration Name"], "abandon")
+then "Store Abandons"
+else if Text.Contains([#"Podium Orchestration Name"], "Store") and Text.Contains([#"Podium Orchestration Name"], "abandon")
+then "Store Abandons"
+else if Text.Contains([#"Message Name"], "Store") and Text.Contains([#"Podium Orchestration Name"], "abandon")
+then "Store Abandons"
+else if Text.Contains([#"Message Name"], "store") and Text.Contains([#"Podium Orchestration Name"], "abandon")
+then "Store Abandons"
+else if Text.Contains([#"Message Name"], "store") and Text.Contains([#"Message Name"], "browse")
+then "Store Abandons"
+else if Text.Contains([#"Message Name"], "store") and Text.Contains([#"Message Name"], "cart")
+then "Store Abandons"
+else if Text.Contains([#"Message Name"], "store") and Text.Contains([#"Message Name"], "quote")
+then "Store Abandons"
+
+//SERVICE REMINDERS
+else if Text.Contains([#"Message Name"], "service") and Text.Contains([#"Message Name"], "reminder") and not Text.Contains([#"Message Name"], "next-stop")
+then "Service Reminder"
+else if Text.Contains([#"Message Name"], "Service") and Text.Contains([#"Message Name"], "reminder") and not Text.Contains([#"Message Name"], "next-stop")
+then "Service Reminder"
+else if Text.Contains([#"Podium Orchestration Name"], "Service Notification") and Text.Contains([#"Podium Orchestration Name"], "Timeframe Service")
+then "Service Reminder"
+else if Text.Contains([#"Podium Orchestration Name"], "service notification") and Text.Contains([#"Podium Orchestration Name"], "timeframe service")
+then "Service Reminder"
